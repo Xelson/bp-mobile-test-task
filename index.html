@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BP-mobile test task</title>
+</head>
+
+<body>
+	<div id="app">
+		<div class="status-bar-se" render-if-se>
+			<div class="status-bar-se__left">
+				<img src="/svg/mobile-signal.svg" alt="mobile signal icon">
+				<span>Sketch</span>
+				<img src="/svg/wifi.svg" alt="wifi icon">
+			</div>
+			<span class="status-bar-se__time">9:41 AM</span>
+			<div class="status-bar-se__right">
+				<img src="/svg/bluetooth.svg" alt="bluetooth icon">
+				<span>100%</span>
+				<img src="/svg/battery.svg" alt="battery icon">
+			</div>
+		</div>
+
+		<div class="status-bar-default" render-if-not-se>
+			<span class="status-bar-default__time">9:41</span>
+			<div class="status-bar-default__right">
+				<img src="/svg/mobile-signal.svg" alt="mobile signal icon">
+				<img src="/svg/wifi.svg" alt="wifi icon">
+				<img src="/svg/battery.svg" alt="battery icon">
+			</div>
+		</div>
+	</div>
+	<script type="module" src="src/main.js"></script>
+</body>
+
 </html>

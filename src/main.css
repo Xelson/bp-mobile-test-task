@@ -1,0 +1,60 @@
+:root {
+	font-family: SF Pro Text;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--bg-gradient: linear-gradient(#00000000, #150534AC, #000000E6, #090119, #000000, #05010E);
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-height:	100vh;
+}
+
+body {
+	background-image: var(--bg-gradient), url('/img/bg.png');
+	background-image: var(--bg-gradient), url('/img/bg.webp');
+
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+	background-size: contain;
+}
+
+body::before {
+    content: " ";
+    background-color: #D613FC9E;
+    display: block;
+    width: 100%;
+    filter: blur(50.28821563720703px);
+    position: absolute;
+    top: -4rem;
+    height: 8rem;
+}
+
+#app {
+	width: 100%;
+	position: relative;
+}
+
+@media only screen and (device-width: 375px) {
+	[render-if-not-se] {
+		display: none !important;
+	}
+}
+
+@media not screen and (device-width: 375px) {
+	[render-if-se] {
+		display: none !important;
+	}
+}

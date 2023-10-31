@@ -1,0 +1,19 @@
+.status-bar-default {
+	height: 2.75rem;
+	padding-left: 1.36rem;
+	padding-right: 0.94rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.status-bar-default__right {
+	display: flex;	
+	gap: 0.33rem;
+}
+
+.status-bar-default__time {
+	text-align: center;
+	width: 3.50rem;
+}
