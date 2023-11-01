@@ -9,6 +9,7 @@
 
 <body>
 	<div id="app">
+		<!-- СТАТУС БАР ДЛЯ SE -->
 		<div class="status-bar-se" render-if-se>
 			<div class="status-bar-se__left">
 				<img src="/svg/mobile-signal.svg" alt="mobile signal icon">
@@ -23,6 +24,7 @@
 			</div>
 		</div>
 
+		<!-- СТАТУС БАР НЕ ДЛЯ SE -->
 		<div class="status-bar-default" render-if-not-se>
 			<span class="status-bar-default__time">9:41</span>
 			<div class="status-bar-default__right">
@@ -30,6 +32,62 @@
 				<img src="/svg/wifi.svg" alt="wifi icon">
 				<img src="/svg/battery.svg" alt="battery icon">
 			</div>
+		</div>
+
+		<!-- КОНТЕНТ СТРАНИЦЫ -->
+		<div class="page page_offer">
+			<button class="button page_offer__button_close">
+				<img src="/svg/cross.svg" alt="mobile signal icon">
+			</button>
+
+			<h1>Get Unlimited Access</h1>
+
+			<div class="page_offer__cards">
+				<div class="card card_offer" style="background-image: url('/img/card1.jpg');">
+					<span class="card__title">Unlimited Art Creation</span>
+				</div>
+				<div class="card card_offer" style="background-image: url('/img/card2.jpg');">
+					<span class="card__title">Exclusive Styles</span>
+				</div>
+				<div class="card card_offer" style="background-image: url('/img/card3.jpg');">
+					<span class="card__title">Magic Avatars With 20% Off </span>
+				</div>
+			</div>
+
+			<form class="page_offer__form" onsubmit="console.log(this)">
+				<div class="page_offer__form__controls">
+					<rich-radio class="radio_offer" name="offer" value="https://apple.com">
+						<div>
+							<h1>YEARLY ACCESS</h1>
+							<span>Just $39.99 per year</span>
+						</div>
+						<div>
+							<p>$0.48</p>
+							<p>per week</p>
+						</div>
+						<label class="best-label">BEST OFFER</label>
+					</rich-radio>
+					<rich-radio class="radio_offer" name="offer" value="https://google.com">
+						<h1>WEEKLY ACCESS</h1>
+						<div>
+							<p>$6.99</p>
+							<p>per week</p>
+						</div>
+					</rich-radio>
+				</div>
+
+				<button class="button button_secondary" type="submit">
+					Continue
+				</button>
+			</form>
+
+			<div class="terms-bar">
+				<a href="#">Terms of use</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Restore</a>
+			</div>
+
+			<div class="home-indicator" render-if-not-se></div>
 		</div>
 	</div>
 	<script type="module" src="src/main.js"></script>

@@ -1,0 +1,58 @@
+.radio_offer {
+	background-color: rgba(255, 255, 255, 0.10);
+	border: 1px solid transparent;
+	border-radius: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 4rem;
+	height: 3.5rem;
+	box-sizing: border-box;
+	position: relative;
+
+	transition: all 100ms;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.radio_offer[selected] {
+	border-color: #FFF;
+	background: rgba(255, 255, 255, 0.30);
+}
+
+.radio_offer h1 {
+	margin: 0;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.radio_offer span,
+.radio_offer p {
+	opacity: 0.7;
+	margin: 0;
+}
+
+.radio_offer .best-label {
+	border-radius: 0.625rem;
+	background: #FFF;
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
+	text-align: center;
+	color: #141131;
+
+	font-family: Roboto;
+	font-size: 0.8125rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+	position: absolute;
+	right: 1.5rem;
+	top: calc(-1.25rem / 2 - 1px);
+
+	width: 7.4375rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+}

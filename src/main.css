@@ -1,6 +1,6 @@
 :root {
-	font-family: SF Pro Text;
-	line-height: 1.5;
+	font-family: SF Pro Display;
+	line-height: normal;
 	font-weight: 400;
 
 	color-scheme: light dark;
@@ -29,6 +29,11 @@ body {
 	background-repeat: no-repeat;
 	background-position-x: 50%;
 	background-size: contain;
+	background-color: black;
+}
+
+body.is-se {
+	background-position-y: -1.5rem;
 }
 
 body::before {
@@ -57,4 +62,16 @@ body::before {
 	[render-if-se] {
 		display: none !important;
 	}
+}
+
+a {
+	color: rgba(255, 255, 255, 0.50);
+	text-decoration: none;
+
+	font-size: 0.78125rem;
+	letter-spacing: 0.03606rem;
+}
+
+a:hover {
+	text-decoration: underline;
 }

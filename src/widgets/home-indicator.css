@@ -1,0 +1,13 @@
+.home-indicator {
+	margin: auto;
+	margin-top: 0.62rem;
+	margin-bottom: 0.5rem;
+
+	width: 8.375rem;
+	height: 0.3125rem;
+	flex-shrink: 0;
+	border-radius: 6.25rem;
+	box-sizing: border-box;
+
+	background: #FFF;
+}

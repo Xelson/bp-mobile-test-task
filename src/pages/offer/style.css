@@ -1,0 +1,63 @@
+.page_offer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.page_offer__form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	padding: 1.5rem;
+}
+
+.page_offer__form__controls {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.is-se .page_offer__form {
+	gap: 0.5rem;
+}
+
+.page_offer__cards {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1.5rem;
+}
+
+.card_offer {
+	width: 6.525rem;
+	height: 8.6625rem;
+}
+
+.page_offer>h1 {
+	text-shadow: 0px 0px 48px rgba(4, 3, 26, 0.83);
+	text-align: center;
+	font-size: 2.625rem;
+	font-weight: 860;
+	line-height: 2.875rem;
+
+	margin: 2.5rem 0;
+}
+
+.page_offer__button_close {
+	position: fixed;
+	left: 1.25rem;
+	top: 4.5rem;
+	width: 0.75rem;
+	height: 0.75rem;
+
+	background: transparent;
+}
+
+.page_offer__button_close img {
+	width: inherit;
+	height: inherit;
+}
+
+.is-se .page_offer__button_close {
+	top: 2.31rem;
+}

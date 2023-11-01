@@ -5,6 +5,8 @@
 
 	display: flex;
 	justify-content: space-between;
+
+	font-family: SF Pro Display;
 }
 
 .status-bar-se__time {

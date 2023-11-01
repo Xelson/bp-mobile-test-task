@@ -6,6 +6,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	font-family: SF Pro Display;
 }
 
 .status-bar-default__right {
