@@ -36,55 +36,53 @@
 
 		<!-- КОНТЕНТ СТРАНИЦЫ -->
 		<div class="page page_offer">
-			<button class="button page_offer__button_close">
+			<a href="#" class="link page_offer__link_close">
 				<img src="/svg/cross.svg" alt="mobile signal icon">
-			</button>
+			</a>
 
-			<h1>Get Unlimited Access</h1>
+			<h1 i18n>Get Unlimited <br>Access</h1>
 
 			<div class="page_offer__cards">
-				<div class="card card_offer" style="background-image: url('/img/card1.jpg');">
-					<span class="card__title">Unlimited Art Creation</span>
+				<div class="card card_offer card_offer__1">
+					<span class="card__title" i18n>Unlimited Art <br>Creation</span>
 				</div>
-				<div class="card card_offer" style="background-image: url('/img/card2.jpg');">
-					<span class="card__title">Exclusive Styles</span>
+				<div class="card card_offer card_offer__2">
+					<span class="card__title" i18n>Exclusive <br>Styles</span>
 				</div>
-				<div class="card card_offer" style="background-image: url('/img/card3.jpg');">
-					<span class="card__title">Magic Avatars With 20% Off </span>
+				<div class="card card_offer card_offer__3">
+					<span class="card__title" i18n>Magic Avatars <br>With 20% Off</span>
 				</div>
 			</div>
 
 			<form class="page_offer__form" onsubmit="console.log(this)">
 				<div class="page_offer__form__controls">
 					<rich-radio class="radio_offer" name="offer" value="https://apple.com">
-						<div>
-							<h1>YEARLY ACCESS</h1>
-							<span>Just $39.99 per year</span>
+						<div class="radio_offer__name">
+							<h1 i18n>YEARLY ACCESS</h1>
+							<span i18n="price=39.99$">Just {{price}} per year</span>
 						</div>
-						<div>
-							<p>$0.48</p>
-							<p>per week</p>
+						<div class="radio_offer__price" i18n="price=0.48$">
+							{{price}} <br>per week
 						</div>
-						<label class="best-label">BEST OFFER</label>
+						<label class="best-label" i18n>BEST OFFER</label>
 					</rich-radio>
 					<rich-radio class="radio_offer" name="offer" value="https://google.com">
-						<h1>WEEKLY ACCESS</h1>
-						<div>
-							<p>$6.99</p>
-							<p>per week</p>
+						<h1 class="radio_offer__name" i18n>WEEKLY ACCESS</h1>
+						<div class="radio_offer__price" i18n="price=6.99$">
+							{{price}} <br>per week
 						</div>
 					</rich-radio>
 				</div>
 
-				<button class="button button_secondary" type="submit">
+				<button class="button button_secondary" type="submit" i18n>
 					Continue
 				</button>
 			</form>
 
 			<div class="terms-bar">
-				<a href="#">Terms of use</a>
-				<a href="#">Privacy Policy</a>
-				<a href="#">Restore</a>
+				<a href="#" i18n>Terms of Use</a>
+				<a href="#" i18n>Privacy Policy</a>
+				<a href="#" i18n>Restore</a>
 			</div>
 
 			<div class="home-indicator" render-if-not-se></div>

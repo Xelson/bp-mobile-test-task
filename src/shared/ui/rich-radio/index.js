@@ -22,7 +22,7 @@ class RichRadioElement extends HTMLElement {
 	}
 
 	disconnectedCallback() {
-		this.removeEventListener(this.clickHandler);
+		this.removeEventListener('click', this.clickHandler);
 	}
 
 	attributeChangedCallback(attr, oldValue, newValue) {

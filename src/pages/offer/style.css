@@ -33,6 +33,21 @@
 	height: 8.6625rem;
 }
 
+.card_offer__1 {
+	background-image: url('/img/card1.jpg');
+	background-image: url('/img/card1.webp');
+}
+
+.card_offer__2 {
+	background-image: url('/img/card2.jpg');
+	background-image: url('/img/card2.webp');
+}
+
+.card_offer__3 {
+	background-image: url('/img/card3.jpg');
+	background-image: url('/img/card3.webp');
+}
+
 .page_offer>h1 {
 	text-shadow: 0px 0px 48px rgba(4, 3, 26, 0.83);
 	text-align: center;
@@ -43,7 +58,7 @@
 	margin: 2.5rem 0;
 }
 
-.page_offer__button_close {
+.page_offer__link_close {
 	position: fixed;
 	left: 1.25rem;
 	top: 4.5rem;
@@ -53,11 +68,11 @@
 	background: transparent;
 }
 
-.page_offer__button_close img {
+.page_offer__link_close img {
 	width: inherit;
 	height: inherit;
 }
 
-.is-se .page_offer__button_close {
+.is-se .page_offer__link_close {
 	top: 2.31rem;
 }

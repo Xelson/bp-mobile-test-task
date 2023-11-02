@@ -3,7 +3,7 @@
 	border: 1px solid transparent;
 	border-radius: 2rem;
 	padding-left: 1.5rem;
-	padding-right: 4rem;
+	padding-right: 1.5rem;
 	height: 3.5rem;
 	box-sizing: border-box;
 	position: relative;
@@ -51,8 +51,22 @@
 	position: absolute;
 	right: 1.5rem;
 	top: calc(-1.25rem / 2 - 1px);
+	box-sizing: border-box;
 
-	width: 7.4375rem;
+	min-width: 7.4375rem;
+	padding: 0 1rem;
 	height: 1.25rem;
 	line-height: 1.25rem;
+}
+
+.radio_offer__price {
+	max-width: 6.3125rem;
+}
+
+[lang="de"] .radio_offer__name {
+	font-size: 0.80rem;
+}
+
+[lang="ja"] .radio_offer__name {
+	line-height: 1.3;
 }

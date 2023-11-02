@@ -2,4 +2,18 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 0.69rem 3.5rem;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.terms-bar a {
+	padding: 0 0.5rem;
+}
+
+[lang="de"] .terms-bar a {
+	font-size: 0.6rem;
+}
+
+[lang="fr"] .terms-bar a {
+	font-size: 0.6rem;
 }
