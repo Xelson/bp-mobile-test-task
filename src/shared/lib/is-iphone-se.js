@@ -1,15 +1,20 @@
-const SE_SCREEN_WIDTH = 375;
+const SE_SCREEN = { W: 375, H: 667 };
+const I8_SCREEN = { W: 414, H: 736 }
 
 export function isIphoneSe() {
-	return window.innerWidth == SE_SCREEN_WIDTH;
+	return (window.innerWidth == SE_SCREEN.W && window.innerHeight == SE_SCREEN.H)
+		|| (window.innerWidth == I8_SCREEN.W && window.innerHeight == I8_SCREEN.H)
 }
 
-const match = window.matchMedia(`only screen and (device-width: ${SE_SCREEN_WIDTH}px)`);
-
 export function onIphoneSeStatusChanged(listener) {
-	if(isIphoneSe()) listener(true);
+	let isSe = isIphoneSe();
+	listener(isSe);
 
-	return match.addEventListener("change", ({ matches }) => {
-		listener(matches)
+	window.addEventListener('resize', () => {
+		const changedIsSe = isIphoneSe();
+		if (isSe != changedIsSe) {
+			listener(changedIsSe);
+			isSe = changedIsSe;
+		}
 	});
 }

@@ -32,7 +32,7 @@ body {
 	background-color: black;
 }
 
-body.is-se {
+html.is-se {
 	background-position-y: -1.5rem;
 }
 
@@ -52,18 +52,6 @@ body::before {
 	position: relative;
 }
 
-@media only screen and (device-width: 375px) {
-	[render-if-not-se] {
-		display: none !important;
-	}
-}
-
-@media not screen and (device-width: 375px) {
-	[render-if-se] {
-		display: none !important;
-	}
-}
-
 a {
 	color: rgba(255, 255, 255, 0.50);
 	text-decoration: none;
@@ -74,4 +62,12 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+.is-se [render-if-not-se] {
+	display: none !important;
+}
+
+.is-not-se [render-if-se] {
+	display: none !important;
 }

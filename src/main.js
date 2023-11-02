@@ -1,5 +1,3 @@
-import './main.css';
-
 import './fonts/sf-pro-text.css'
 import './fonts/sf-pro-display.css'
 
@@ -13,12 +11,10 @@ import './widgets/home-indicator.css'
 import './widgets/card.css'
 import './pages/offer';
 
-import { onI18nInit } from './i18n';
-import { onIphoneSeStatusChanged } from './shared/lib/is-iphone-se';
+import './main.css';
 
-onIphoneSeStatusChanged(isIphoneSe => {
-	document.body.classList.toggle('is-se', isIphoneSe);
-});
+import './adaptive';
+import { onI18nInit } from './i18n';
 
 onI18nInit((t, lang) => {
 	const elements = document.querySelectorAll('[i18n]');
