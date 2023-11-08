@@ -9,10 +9,10 @@ class RichRadioElement extends HTMLElement {
 		inputEl.hidden = true;
 		inputEl.name = this.getAttribute('name');
 		inputEl.value = this.getAttribute('value');
+		inputEl.checked = this.getAttribute('selected') !== null;
 
 		this.append(inputEl);
 		this.inputEl = inputEl;
-
 		this.inputEl.onchange = event => console.log(event.target.checked);
 
 		this.clickHandler = this.addEventListener('click', () => {
