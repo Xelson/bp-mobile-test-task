@@ -32,6 +32,13 @@ body {
 	background-color: black;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		background-image: var(--bg-gradient), url('/img/bg-r.png');
+		background-image: var(--bg-gradient), url('/img/bg-r.webp');
+	}
+}
+
 html.is-se {
 	background-position-y: -1.5rem;
 }

@@ -1,7 +1,7 @@
 .status-bar-se {
 	height: 1rem;
 	font-size: 0.75rem;
-	padding: 0.15rem 0.31rem;
+	padding: 0.15rem 0.38rem;
 
 	display: flex;
 	justify-content: space-between;
@@ -16,11 +16,16 @@
 .status-bar-se__right {
 	display: flex;
 	align-items: center;
-	gap: 0.15rem;
+	gap: 0.2rem;
 }
 
 .status-bar-se__left {
 	display: flex;
 	align-items: center;
-	gap: 0.3rem;
+}
+
+.status-bar-se__left span {
+	margin-left: 0.22rem;
+	margin-right: 0.4rem;
+	letter-spacing: 0.04rem;
 }

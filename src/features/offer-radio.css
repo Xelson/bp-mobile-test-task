@@ -60,6 +60,7 @@
 
 .radio_offer__price {
 	max-width: 6.3125rem;
+	width: 100%;
 }
 
 [lang="de"] .radio_offer__name {

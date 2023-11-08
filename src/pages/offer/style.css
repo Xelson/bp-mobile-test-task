@@ -10,6 +10,13 @@
 	gap: 1em;
 
 	padding: 1.5rem;
+	padding-top: 3.11rem;
+	padding-bottom: 1.8rem;
+}
+
+.is-se .page_offer__form {
+	padding-top: 2.53rem;
+	padding-bottom: 1.75rem;
 }
 
 .page_offer__form__controls {
@@ -48,6 +55,23 @@
 	background-image: url('/img/card3.webp');
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.card_offer__1 {
+		background-image: url('/img/card1-r.jpg');
+		background-image: url('/img/card1-r.webp');
+	}
+	
+	.card_offer__2 {
+		background-image: url('/img/card2-r.jpg');
+		background-image: url('/img/card2-r.webp');
+	}
+	
+	.card_offer__3 {
+		background-image: url('/img/card3-r.jpg');
+		background-image: url('/img/card3-r.webp');
+	}
+}
+
 .page_offer>h1 {
 	text-shadow: 0px 0px 48px rgba(4, 3, 26, 0.83);
 	text-align: center;
@@ -55,7 +79,7 @@
 	font-weight: 860;
 	line-height: 2.875rem;
 
-	margin: 2.5rem 0;
+	margin: 2.54rem 0;
 }
 
 .page_offer__link_close {
